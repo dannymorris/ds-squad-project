@@ -1,2 +1,10 @@
 # ds-squad-project
-Project repository for DS Squad
+
+Welcome to the DS Squad project repository. 
+
+# Getting started
+
+- Create a GitHub account
+- Download Git
+- Clone the project
+- Get to work!
