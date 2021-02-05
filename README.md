@@ -17,6 +17,7 @@ Follow these instructions to start using Git and this GitHub repository effectiv
 - Clone the project by opening Git Bash (or your preferred Git tool) and enter the following:
 
 ```
+cd path_to_your_preferred_local_folder
 git clone https://github.com/dannymorris/ds-squad-project.git
 ```
 
@@ -27,7 +28,7 @@ git clone https://github.com/dannymorris/ds-squad-project.git
 - Each day you work on the project, get in the habit of "pulling" the latest copy of the GitHub repo to your local machine. As your work progresses, you'll want to keep the habit of pulling frequently to ensure that everyone's local Git repository is up-to-date. Look out for communications from team members in new files are added to the GitHub repo that you may need to pull. Use the following code to pull the latest copy of the GitHub repo to your local machine.
 
 ```
-cd path_to_your_local_project_folder
+cd path_to_your_preferred_local_folder
 git pull
 ```
 
