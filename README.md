@@ -8,36 +8,54 @@ Welcome to the DS Squad project repository.
 
 - Get acquainted with the Trello board (link in the #important-links Slack channel).
 
-# Clone the repository from GitHub
+- Follow the Git and GitHub workflow described below.
 
-Follow these instructions to start using Git and this GitHub repository effectively.
+# Download Git and GitHub
 
 - [Download Git](https://git-scm.com/downloads)
 - Create a [GitHub account](https://github.com/)
-- Clone the project by opening Git Bash (or your preferred Git tool) and enter the following:
+
+# Simple workflow for using Git and GitHub
+
+Follow these instructions to start using Git and this GitHub repository effectively.
+
+- Clone the project by opening Git Bash (or your preferred Git tool) and entering the following:
 
 ```
-cd path_to_your_preferred_local_folder
+cd documents # or some other local folder to store the project
 git clone https://github.com/dannymorris/ds-squad-project.git
 ```
 
-# Simple workflow for collaborating on GitHub
-
-- Each member will have "push" access to the main branch. While this is typically not recommended, I believe it is appropriate given the nature of the project. Since each of you will most likely be working on your own set of files, we are unlikely to have many conflicts. 
-
-- Each day you work on the project, get in the habit of "pulling" the latest copy of the GitHub repo to your local machine. As your work progresses, you'll want to keep the habit of pulling frequently to ensure that everyone's local Git repository is up-to-date. Look out for communications from team members in new files are added to the GitHub repo that you may need to pull. Use the following code to pull the latest copy of the GitHub repo to your local machine.
+- Create your own branch to isolate your work and protect the main branch. Replace `my_branch_name` with something unique, e.g. `firstname_lastname`.
 
 ```
-cd path_to_your_preferred_local_folder
-git pull
+git checkout -b my_branch_name
 ```
 
-- Develop the habit of "adding", "committing", and "pushing" your work frequently. For example, if you create a new Python script use the following code:
+- Create a new file, stage it, and commit it.
 
 ```
-git add my_new_script.py
-git commit -m "adding my new Python script containing crime summary statistics"
-git push
+git add my_new_file.py
+git commit -m "adding my_new_file.py"
 ```
 
-- If you push a file that may impact other team members, be sure to send out a communication on Slack.
+- Push your file to your branch in GitHub
+
+```
+git push origin my_branch_name
+```
+
+- If you need to grab a file from another branch (e.g. another team member's branch), use the following:
+
+```
+git checkout some_other_branch another_file.py
+git add another_file.py
+git commit -m "adding another_file.py from some_other_branch"
+```
+
+# When and how to move files to the main branch
+
+The main branch is now a "protected" branch, meaning no team member has direct access to push files directly to the main branch. This branch is reserved for "production" code. For this project, that may include the final Jupyter notebook for reproducing the machine learning model, a complete Python script for sourcing new features, and code for the final dashboard. 
+
+Team members are expected to use their branches while the work is being developed. To move files to the main branch, a "pull request" must be submitted and reviewed by the repo administrator. This can be done by logging in to GitHub and going to the "Pull Requests" tab. If the pull request passes the code review by the administrator, it will be accepted into the main branch.
+
