@@ -1,0 +1,46 @@
+/*ScriptName : compile.java / compile.py
+ * Authors : Eric Caskey , Melvin Sebastian
+ * Version : 0.1
+ * Purpose : This script is a configuration file designed to 
+ * 			store and define common variables a single runtime 
+ * 			will have the file script will reference this for 
+ * 			log, input and output information. Not run in our
+ * 			operations but 
+ * */
+
+package ref; // PACKAGE (FOLDER NAME)
+
+import work.date; //IMPORT DATE CRUNCHING ROUTINES (NOT SURE HOW PYTHON IS WITH DATES)
+import work.file; // IMPORT FILE ROUTINES
+
+public class config {
+	public static void main(String[] args) { // THIS IS A MAIN METHOD TO RUN THE FILE - I USE IT TO TEST PATH
+		setConfig("Crime"); // TEST CRIME PARAM
+		file.logMessage("Test"); // LOG A TEST MESSAGE TO CONFIRM OUR LOCATION
+	} // END MAIN METHOD
+	//START DEFINED PUBLIC CONFIG VARIABLES
+	public static String jobDesc="";	//WHAT WE CALL THE JOB WE ARE RUNNING
+	public static String inputFile=""; // WHERE WE LOOK REPORT CSV INPUT 
+	public static String outputFile="";  // WHERE WE WRITE REPORT CSV OUTPUT
+	public static String logFile=""; // WHERE WE WRITE LOG OUTPUT
+	//END DEFINED PUBLIC  CONFIG VARIABLES
+	
+	public static boolean setConfig(String job) { // PUBLIC METHOD CALLED BY MAIN CLASS DEFINING JOB DESC
+		jobDesc=job; // STORE PARAMETER PASSED AS jobDesc
+		
+			//IN PYTHON I'd LIKE TO DEFINE AS ONE PATH BACKWARDS TO THE DIRECTORY STRUCTURE WE HAVE DEFINED 
+		 		// (THIS IS COMPLICATED IN JAVA - DONT WANT TO CONFUSE)
+			//	UNTIL THEN WE CAN USE FULL PATH TO FILE
+		if(job.contains("Crime")) { // IF CRIME IS PASSED, DEFINE LOG AND INPUT FILES
+			inputFile="D:\\BuffaloCrime\\gitRepo\\ds-squad-project\\datakit\\tmp\\Crime_Incidents.csv"; // INPUT CSV
+			logFile="D:\\BuffaloCrime\\gitRepo\\ds-squad-project\\datakit\\logs\\CompileCrime_"+date.timestamp()+".txt"; // LOG FILE
+		}
+		else if(job.contains("Date")) { // IF DATE IS PASSED, DEFINE LOG AND INPUT FILES	
+			inputFile="D:\\BuffaloCrime\\gitRepo\\ds-squad-project\\datakit\\tmp\\Date.csv"; // INPUT CSV
+			logFile="D:\\BuffaloCrime\\gitRepo\\ds-squad-project\\datakit\\logs\\CompileDate_"+date.timestamp()+".txt"; // LOG FILE		
+			inputFile="\\tmp\\Date.csv"; // DATE INPUT CSV
+			logFile="\\logs\\CompileDate_"+date.timestamp()+".txt"; /// DATE LOG FILE			
+		}
+		return true; // RETURN TRUE TO RESUME SCRIPT OPERATION
+	}
+}
