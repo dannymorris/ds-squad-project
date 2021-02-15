@@ -1,33 +1,29 @@
-from os.path import dirname
 import os
 import datetime
 
-import work.date
-import work.file
-
+import src.zstage.work.date as date
+import src.zstage.work.file as file
 
 class config:
-    def __init__(self):
-        self.jobDesc = ""
-        self.inputFile = ""
-        self.outputFile = ""
-        self.logFile = ""
 
     def setConfig(self, job):
         self.jobDesc = job
+        global inputFile
+        global logFile
         if "Crime" in job:
-            self.inputFile = f"{dirname(os.getcwd())}Crime_Incidents.csv"
-            self.logFile = f"{dirname(os.getcwd())}CompileCrime_{datetime.datetime.now()}.txt"
+            inputFile = "Crime_Incidents.csv"
+            logFile = f"logs/CompileCrime_{datetime.datetime.now()}.txt"
 
         elif "Date" in job:
-            self.inputFile = f"{dirname(os.getcwd())}Date.csv"
-            self.logFile = f"{dirname(os.getcwd())}CompileDate_{datetime.datetime.now()}.txt"
+            inputFile = f"Date.csv"
+            logFile = f"logs/CompileDate_{datetime.datetime.now()}.txt"
         return True
 
 
+
 def main():
-    config.setConfig("Crime")
-    file.logMessage("Test")
+    config().setConfig("Crime")
+    file.File().logMessage("Test")
 
 if __name__ == "__main__":
     main()

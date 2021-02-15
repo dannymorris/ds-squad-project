@@ -1,16 +1,18 @@
-import main.config
-import main.compile
-import main.db
-
 import logging
 import traceback
 import os
 import datetime
 
-# Create and configure logger
+
+import src.zstage.main.config as config
+import src.zstage.main.compile as compile
+import src.zstage.work.db as db
+
+
+# Create and configure logger :
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)
-logging.basicConfig(filename="newfile.log",
+logging.basicConfig(filename="logs/file_log.log",
                     format='\n%(asctime)s   %(message)s',
                     filemode='a', level=logging.DEBUG)
 logger = logging.getLogger()
@@ -42,7 +44,7 @@ class File:
             else:
                 self.bw.write(f'\n{line}')
                 self.bw.close()
-        except:
+        except Exception as ex:
             traceback.print_exc()
             logger.exception("Something awful happened")
 
@@ -56,7 +58,7 @@ class File:
             else:
                 self.bw.write(f'\n{datetime.datetime.now()} :: {line}')
                 self.bw.close()
-        except:
+        except Exception as ex:
             traceback.print_exc()
             logger.exception("Something awful happened")
 
@@ -91,7 +93,9 @@ class File:
                     self.value[5] = self.row[7]
                     compile.incidentTable.put(compile.incidentTable.size() + db.tableSize("incident") + 1, self.value)
             return True
-        except:
+        except Exception as ex:
             traceback.print_exc()
             logger.exception("Something awful happened")
             return False
+
+
