@@ -4,10 +4,13 @@ import datetime
 import src.zstage.work.date as date
 import src.zstage.work.file as file
 
-class config:
+jobDesc = ""
+inputFile = ""
+outputFile = ""
+logFile = ""
 
-    def setConfig(self, job):
-        self.jobDesc = job
+def setConfig(job):
+        jobDesc = job
         global inputFile
         global logFile
         if "Crime" in job:
@@ -22,7 +25,7 @@ class config:
 
 
 def main():
-    config().setConfig("Crime")
+    setConfig("Crime")
     file.File().logMessage("Test")
 
 if __name__ == "__main__":
