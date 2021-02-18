@@ -1,0 +1,38 @@
+In 10 year working in technology, I have found taking the first step to implement a new vision is always the hardest. Other planned pieces always seem to self-construct around that first step.
+
+Hi, my name is Eric Caskey. I am a Data Engineer, and this is a story about my journey through Data Science.
+
+
+As a corporate network operations technologist for nearly a decade, data has been a part of my daily routine. It keeps me up at night and shapes my viewpoint on processes. My draw towards programming automations and interactive solutions lead to owning corporate VPN and MFA “Accounting and Reporting.” Recently I was also handed creative control and accountability for all things MFA and VPN automation. Because I worked in a Network oriented group, for years I dedicated most of my time to these business process management solutions not truly knowing the category of my job functions.
+
+In recent years, trouble-shooting endeavors and targeted news feed articles started including Data Science concepts. I've had conversations with good friends surrounding the mathematics of Machine Learning and its dependence on data that could be reliably engineered. Visualizations are broadcast that leave me thinking how the data was compiled behind the graph. Comparing my work to many of these methodologies, I started to define my duties at an intersection of Data Engineering and DevOps... "Data Operations"
+
+My job is to create and maintain an operation of automations that interact with network VPN and MFA solutions.
+
+Some automations process logs and extract SQL information to account for system licensing and provide reports to enterprise business partners. I need to be able to quickly and efficiently produce dynamic datasets to business partners and senior executives. Accurate reporting drives enterprise business decisions around MFA and VPN usage. - Data Engineering.
+
+Others keep track of specific configurations and take action when they are outside of a defined business rule. We programmatically configure accounts, manage license provisioning and leverage APIs to always have a handle on day-to-day operations- DevOps.
+
+During the COVID-19 pandemic, VPN and MFA technology use skyrocketed. We reached a point where programmed operations managed and accounted for over one million of monthly VPN sessions and tens of thousands of MFA tokens. As waves haste configuration requests flooded in and the projects piled up, I realized what my product had become: a simple, scalable and transferable solution. Once I came to this realization, I started to form and organize a vision and strategy around this Data Operations approach. Once these principles were cemented, I wanted to bring this vision to an agile process. 
+
+Enter Danny Morris and his LinkedIn post. He was searching for a Data Engineer to work in an organized effort to visualize and forecast. This agile collaboration seemed like the perfect opportunity to join the Data Science community. Now I'm by no means a community expert and often use corporate jargon in place of Data Science terms. Never-the-less my the collection of principles and industry experience lead me to share my vision with Danny, and seek a role as Data Engineer on the "Data Squad"
+
+This Data Science project fit my operation’s model. The industry is rapidly moving to a more agile and efficient workflow. I wanted to see the direct affect my Data Engineering had on Data Scientists downstream. How does this model positively/negatively affect analysis and how can be improve it? Once the team bought into this solution, work started with these guiding design principles
+
+<strong>Simple</strong>
+- Work with lowest possible order relationships
+- Write least amount of necessary code
+
+<strong>Scalable</strong>
+- Seamless upload automations of defined datasets
+- Easily schedule new dynamic reports
+
+<strong>Transferable</strong>
+- Easily deployed to different environments
+- Data Operations are transparent to stakeholders
+
+
+This is my first step into the Data Science community. As this project progresses, I will share my agile experience and how the Data Engineering aspect of this project is approached. I am looking forward to the final solution our team will present to the community!
+
+
+<img class="size-large wp-image-509 aligncenter" src="http://blog.caskeycoding.com/wp-content/uploads/2021/02/HelloDS-1024x289.jpg" alt="" width="1024" height="289" />
