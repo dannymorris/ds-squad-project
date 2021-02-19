@@ -31,6 +31,7 @@ This Data Science project fit my operation’s model. The industry is rapidly mo
 - Easily deployed to different environments
 - Data Operations are transparent to stakeholders
 
+I am looking forward to the learning this expeience will create. I will learn a lot from Melvin as we develop a Python model and he keeps me in line with Data Science norms / best practices. It will give me a change to work through the entire data lifecycle and see how Machine Learning and Visualization experts use data I engineer. Mateen is working QA and already seems eager to provide quality feedback. I am excited to work with Data Professionals from differnt parts of the globe to create something exciting and gain meaningful Data Engineering experience.
 
 This is my first step into the Data Science community. As this project progresses, I will share my agile experience and how the Data Engineering aspect of this project is approached. I am looking forward to the final solution our team will present to the community!
 
