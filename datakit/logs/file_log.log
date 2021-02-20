@@ -1,0 +1,30 @@
+hello
+2021-02-20 14:51:28,481   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/file.py", line 33, in getSQL
+    self.line = br.readline()
+ValueError: I/O operation on closed file.
+
+2021-02-20 15:07:53,435   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/file.py", line 75, in collectCrimeEntities
+    self.value[0] = self.row[6]
+IndexError: list assignment index out of range
+
+2021-02-20 15:08:27,728   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/file.py", line 76, in collectCrimeEntities
+    self.value[0] = self.row[6]
+IndexError: list assignment index out of range
+
+2021-02-20 15:11:49,580   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/file.py", line 84, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: module 'src.zstage.main.compile' has no attribute 'addressTable'
+
+2021-02-20 15:14:04,395   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/file.py", line 84, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: module 'src.zstage.main.compile' has no attribute 'addressTable'

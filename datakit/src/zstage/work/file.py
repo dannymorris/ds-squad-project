@@ -2,37 +2,40 @@ import logging
 import traceback
 import os
 import datetime
-
+from os.path import dirname
 
 import src.zstage.main.config as config
 import src.zstage.main.compile as compile
 import src.zstage.work.db as db
 
 
+# Note that the log file created from errors in the file python file will be stored as 'file_log'. Can be changed as needed
 # Create and configure logger :
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)
-logging.basicConfig(filename="logs/file_log.log",
+logging.basicConfig(filename=f"{dirname(dirname(dirname(os.getcwd())))}/logs/file_log.log",
                     format='\n%(asctime)s   %(message)s',
                     filemode='a', level=logging.DEBUG)
 logger = logging.getLogger()
 
-
+"""
+ Note that fileName will need to have the full address as input which can be changed if 
+I know where the file normally originates from:
+"""
 class File:
 
     def getSQL(self, fileName):
         self.sql = ""
         try:
-            br = open(fileName, "r")
-            self.line = ""
-            while self.line != None:
-                self.line = br.readline()
-                self.sql = self.sql + " " + self.line
+            self.br = open(fileName, "r")
+            for line in self.br.read().splitlines():
+                self.sql = self.sql + " " + line
+            self.br.close()
             return self.sql
         except Exception as ex:
             traceback.print_exc()
-            # logging.exception('Something awful happened!')
-            logger.exception("Something awful happened")
+            logger.exception("Exception occurred")
+            self.br.close()
             return self.sql
 
     def writeFileName(self, fileName, line):
@@ -46,7 +49,7 @@ class File:
                 self.bw.close()
         except Exception as ex:
             traceback.print_exc()
-            logger.exception("Something awful happened")
+            logger.exception("Exception occurred")
 
     def logMessage(self, line):
         print(line)
@@ -60,42 +63,41 @@ class File:
                 self.bw.close()
         except Exception as ex:
             traceback.print_exc()
-            logger.exception("Something awful happened")
+            logger.exception("Exception occurred")
 
     def collectCrimeEntities(self):
         try:
             self.br = open(config.inputFile, "r")
-            for line in self.br:
+            for line in self.br.read().splitlines()[1:]:
                 self.row = line.split(',')
                 if len(self.row) > 6 and not db.exists("addresses",
                                                        "address1='" + self.row[6] + "' AND address2='" + self.row[
                                                            7] + "';"):
                     self.value = []
-                    self.value[0] = self.row[6]
-                    self.value[1] = self.row[7]
-                    self.value[2] = self.row[16]
-                    self.value[3] = self.row[25]
-                    self.value[4] = self.row[24]
-                    self.value[5] = self.row[23]
-                    self.value[6] = self.row[22]
-                    self.value[7] = self.row[11]
+                    self.value.append(self.row[6])
+                    self.value.append(self.row[7])
+                    self.value.append(self.row[16])
+                    self.value.append(self.row[25])
+                    self.value.append(self.row[24])
+                    self.value.append(self.row[23])
+                    self.value.append(self.row[22])
+                    self.value.append(self.row[11])
                     compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
 
                 if len(self.row) > 6 and not db.exists("incidents",
                                                        "case_number='" + self.row[1] + "' AND address2='" + self.row[
                                                            0] + "';"):
                     self.value = []
-                    self.value[0] = self.row[6]
-                    self.value[1] = self.row[1]
-                    self.value[2] = self.row[2]
-                    self.value[3] = self.row[3]
-                    self.value[4] = self.row[6]
-                    self.value[5] = self.row[7]
+                    self.value.append(self.row[6])
+                    self.value.append(self.row[1])
+                    self.value.append(self.row[2])
+                    self.value.append(self.row[3])
+                    self.value.append(self.row[6])
+                    self.value.append(self.row[7])
                     compile.incidentTable.put(compile.incidentTable.size() + db.tableSize("incident") + 1, self.value)
             return True
         except Exception as ex:
             traceback.print_exc()
-            logger.exception("Something awful happened")
+            logger.exception("Exception occurred")
             return False
-
 
