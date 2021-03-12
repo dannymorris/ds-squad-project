@@ -28,3 +28,564 @@ Traceback (most recent call last):
   File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/file.py", line 84, in collectCrimeEntities
     compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
 AttributeError: module 'src.zstage.main.compile' has no attribute 'addressTable'
+
+2021-03-09 17:21:45,319   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:21:45,319   Exception occurred  
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:22:28,858   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:22:28,858   Exception occurred  
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:22:41,688   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:22:41,688   Exception occurred  
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:23:14,428   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:23:14,436   Exception occurred  
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:23:44,530   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:23:44,530   Exception occurred  
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:23:59,917   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:23:59,917   Exception occurred  
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:24:11,459   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:24:11,459   Exception occurred  
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:25:18,767   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:25:18,767   Exception occurred  
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-09 17:25:54,500   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:25:56,556   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021/03/02T00:00:00%27 HTTP/1.1" 400 None
+
+2021-03-09 17:25:56,559   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:25:57,671   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021/03/02T00:00:00%27 HTTP/1.1" 400 None
+
+2021-03-09 17:26:36,917   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:26:38,049   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021/03/02T00:00:00%27 HTTP/1.1" 400 None
+
+2021-03-09 17:26:38,057   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:26:39,268   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021/03/02T00:00:00%27 HTTP/1.1" 400 None
+
+2021-03-09 17:28:30,328   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:28:33,357   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at2021/03/02T00:00:00%27 HTTP/1.1" 400 None
+
+2021-03-09 17:28:33,368   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:28:34,458   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at2021/03/02T00:00:00%27 HTTP/1.1" 400 None
+
+2021-03-09 17:31:33,289   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:31:36,916   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at2021-03-02T00:00:00%27 HTTP/1.1" 400 None
+
+2021-03-09 17:31:36,919   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:31:38,004   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at2021-03-02T00:00:00%27 HTTP/1.1" 400 None
+
+2021-03-09 17:32:27,057   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:32:28,508   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-02T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-09 17:32:28,520   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:32:29,706   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-02T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-09 17:38:06,882   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:38:08,492   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-02T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-09 17:38:08,499   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-09 17:38:09,654   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-02T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-09 17:38:37,145   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 77, in collectCrimeEntities
+    if len(self.row) > 6 and not db.exists("addresses",
+AttributeError: partially initialized module 'src.zstage.work.db' has no attribute 'exists' (most likely due to a circular import)
+
+2021-03-09 17:38:37,145   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 77, in collectCrimeEntities
+    if len(self.row) > 6 and not db.exists("addresses",
+AttributeError: module 'src.zstage.work.db' has no attribute 'exists'
+
+2021-03-09 17:38:53,783   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 77, in collectCrimeEntities
+    if len(self.row) > 6 and not db.DB().exists("addresses",
+AttributeError: partially initialized module 'src.zstage.work.db' has no attribute 'DB' (most likely due to a circular import)
+
+2021-03-09 17:38:53,783   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 82, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-09 17:38:53,783   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 89, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 17:39:38,405   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 82, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-09 17:39:38,405   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 89, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 17:40:06,411   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 82, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-09 17:40:06,411   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 89, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 17:41:27,141   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'caskey5_buffaloCrime_test.addresses' doesn't exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 83, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'caskey5_buffaloCrime_test.addresses' doesn't exist
+
+2021-03-09 17:41:27,145   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 89, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 17:42:22,072   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'address2' in 'where clause'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 83, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'address2' in 'where clause'
+
+2021-03-09 17:42:22,072   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 89, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 17:43:57,150   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 85, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-09 17:43:57,150   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 88, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 17:44:56,835   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 85, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-09 17:44:56,835   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 88, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 17:46:04,880   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 85, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-09 17:46:04,880   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 89, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 18:17:16,139   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 83, in exists
+    self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-09 18:17:16,139   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 88, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 18:17:35,303   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 88, in collectCrimeEntities
+    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 18:19:30,533   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 88, in collectCrimeEntities
+    compile.addressTable[compile.addressTable.size() + db.tableSize("address") + 1]= self.value
+AttributeError: 'dict' object has no attribute 'size'
+
+2021-03-09 18:19:52,999   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 88, in collectCrimeEntities
+    compile.addressTable[compile.addressTable.size() + db.tableSize("address") + 1]= self.value
+AttributeError: 'dict' object has no attribute 'size'
+
+2021-03-09 18:20:23,110   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 88, in collectCrimeEntities
+    compile.addressTable[len(compile.addressTable) + db.tableSize("address") + 1]= self.value
+AttributeError: module 'src.zstage.work.db' has no attribute 'tableSize'
+
+2021-03-09 18:20:55,347   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 69, in tableSize
+    size = self.mycursor.execute("SELECT COUNT(*) FROM " + table)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-09 18:20:55,363   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 90, in collectCrimeEntities
+    if len(self.row) > 6 and not db.exists("incidents",
+AttributeError: module 'src.zstage.work.db' has no attribute 'exists'
+
+2021-03-09 18:21:18,283   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 88, in collectCrimeEntities
+    compile.addressTable[len(compile.addressTable) + db.DB().tableSize("address") + 1]= self.value
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+2021-03-09 18:23:32,657   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 90, in collectCrimeEntities
+    if len(self.row) > 6 and not db.exists("incidents",
+AttributeError: module 'src.zstage.work.db' has no attribute 'exists'
+
+2021-03-09 18:24:10,718   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'caskey5_buffaloCrime_test.incidents' doesn't exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 85, in exists
+    self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'caskey5_buffaloCrime_test.incidents' doesn't exist
+
+2021-03-09 18:24:10,733   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 99, in collectCrimeEntities
+    compile.incidentTable.put(len(compile.incidentTable) + db.tableSize("incident") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'
+
+2021-03-09 18:24:27,258   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/HandleFile.py", line 99, in collectCrimeEntities
+    compile.incidentTable.put(len(compile.incidentTable) + db.tableSize("incident") + 1, self.value)
+AttributeError: 'dict' object has no attribute 'put'

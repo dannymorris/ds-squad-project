@@ -1,0 +1,1424 @@
+
+
+2021-03-01 22:46:21,511   no valid date format found
+NoneType: None
+
+2021-03-01 22:49:23,705   no valid date format found
+
+2021-03-01 22:49:54,686   no valid date format found
+
+2021-03-01 22:50:10,565   no valid date format found
+
+2021-03-08 22:07:24,360   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 27, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-08 22:07:24,369   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 106, in selectStatement
+    rs = self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 22:07:24,369   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 38, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-08 22:09:45,013   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 27, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-08 22:10:12,883   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 27, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-08 22:10:12,894   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 106, in selectStatement
+    rs = self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 22:10:12,894   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 38, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-08 22:11:05,480   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 27, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-08 22:11:05,485   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 106, in selectStatement
+    rs = self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 22:11:05,485   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 38, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-08 22:12:27,045   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 27, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-08 22:12:27,054   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 107, in selectStatement
+    rs = self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 22:12:27,054   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 39, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-08 22:15:25,300   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 30, in connect
+    self.mycursor = con.cursor()
+NameError: name 'con' is not defined
+
+2021-03-08 22:15:25,300   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 106, in selectStatement
+    rs = self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 22:18:31,866   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 30, in connect
+    self.mycursor = con.cursor()
+NameError: name 'con' is not defined
+
+2021-03-08 22:18:31,868   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 106, in selectStatement
+    rs = self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 22:18:44,387   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 30, in connect
+    self.mycursor = con.cursor()
+NameError: name 'con' is not defined
+
+2021-03-08 22:18:44,387   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 106, in selectStatement
+    rs = self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 22:19:13,188   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'caskey5_buffaloCrime.incidents' doesn't exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 106, in selectStatement
+    rs = self.mycursor.execute(select)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'caskey5_buffaloCrime.incidents' doesn't exist
+
+2021-03-08 22:19:41,390   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 108, in selectStatement
+    column_count = len(rs[0])
+TypeError: 'NoneType' object is not subscriptable
+
+2021-03-08 22:21:19,610   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 109, in selectStatement
+    column_count = len(rs[0])
+TypeError: 'NoneType' object is not subscriptable
+
+2021-03-08 22:27:24,017   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 107, in selectStatement
+    rs = mycursor.fetchall()
+NameError: name 'mycursor' is not defined
+
+2021-03-08 22:29:03,635   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 119, in selectStatement
+    line = "" + i[c - 1]
+TypeError: can only concatenate str (not "datetime.datetime") to str
+
+2021-03-08 22:36:37,492   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 122, in selectStatement
+    line = line + "," + str(i(c - 1))
+TypeError: 'tuple' object is not callable
+
+2021-03-08 23:34:46,073   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'MASTEN' in 'where clause'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 82, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'MASTEN' in 'where clause'
+
+2021-03-08 23:35:24,284   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'council_districts' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 82, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'council_districts' at line 1
+
+2021-03-08 23:36:46,432   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'council_districts' in 'where clause'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 82, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'council_districts' in 'where clause'
+
+2021-03-08 23:37:27,174   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 84, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-08 23:38:14,473   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 28, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-08 23:38:24,963   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 28, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-08 23:38:24,963   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 107, in selectStatement
+    self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 23:38:24,963   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 39, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-08 23:57:38,053   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 28, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-08 23:57:38,053   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 107, in selectStatement
+    self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 23:57:38,053   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 39, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-08 23:58:19,856   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_tests'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 28, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_tests'
+
+2021-03-08 23:58:19,857   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 107, in selectStatement
+    self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-08 23:58:19,857   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 39, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-09 00:00:38,578   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 28, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-09 00:00:38,586   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 107, in selectStatement
+    self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-09 00:00:38,586   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 39, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-09 00:02:47,705   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 28, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-09 00:02:47,705   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 107, in selectStatement
+    self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-09 00:02:47,705   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 39, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-09 00:05:52,540   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 29, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-09 00:05:52,542   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 108, in selectStatement
+    self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-09 00:05:52,542   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 40, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-09 00:06:38,213   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 233, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 30, in connect
+    self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\__init__.py", line 277, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 86, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\abstracts.py", line 1003, in connect
+    self._open_connection()
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 235, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'caskey5_dannyMorris'@'%' to database 'caskey5_buffaloCrime_test'
+
+2021-03-09 00:06:38,221   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 109, in selectStatement
+    self.mycursor.execute(select)
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-09 00:06:38,221   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 41, in close
+    self.con.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+2021-03-09 00:14:12,044   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '_melvin)' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 59, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '_melvin)' at line 1
+
+2021-03-09 00:14:28,844   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Duplicate entry '1' for key 'PRIMARY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 59, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+
+2021-03-09 17:51:13,492   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'caskey5_buffaloCrime_test.ADDRESS' doesn't exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 83, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'caskey5_buffaloCrime_test.ADDRESS' doesn't exist
+
+2021-03-09 17:52:07,653   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'poopy_land' in 'where clause'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 83, in exists
+    rs = self.mycursor.execute("SELECT COUNT(*) FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'poopy_land' in 'where clause'
+
+2021-03-09 17:53:09,173   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 85, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-09 17:53:45,392   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 85, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-09 17:54:00,480   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 85, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-09 17:54:43,214   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 85, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-09 18:07:10,243   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 85, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-09 18:10:46,525   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 86, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+
+2021-03-09 18:14:23,258   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 86, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'list' and 'int'
+
+2021-03-09 18:15:01,006   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 87, in exists
+    if size > 1:
+TypeError: '>' not supported between instances of 'list' and 'int'
+
+2021-03-10 16:43:49,209   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 100, in idWhere
+    rs = mycursor.fetchall()
+NameError: name 'mycursor' is not defined
+
+2021-03-10 16:44:27,052   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 100, in idWhere
+    rs = mycursor.fetchall()
+NameError: name 'mycursor' is not defined
+
+2021-03-10 17:08:49,036   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'date_type' in 'where clause'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 100, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'date_type' in 'where clause'
+
+2021-03-10 17:09:35,567   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'date_type' in 'where clause'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 100, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'date_type' in 'where clause'
+
+2021-03-10 17:09:47,413   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'test2' in 'where clause'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 100, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'test2' in 'where clause'
+
+2021-03-10 17:10:01,044   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 51, in insert
+    self.mycursor.commit()
+AttributeError: 'CMySQLCursor' object has no attribute 'commit'
+
+2021-03-10 17:12:14,690   Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 50, in insert
+    self.mycursor.execute("INSERT INTO " + args[0] + " VALUES " + args[1])
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+2021-03-10 17:13:15,880   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 51, in insert
+    self.mycursor.execute("INSERT INTO " + args[0] + " VALUES " + args[1])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+
+2021-03-10 17:14:19,264   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Duplicate entry '17' for key 'PRIMARY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ASUS/Desktop/documents/ds_squad/ds-squad-project/datakit/src/zstage/work/db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '17' for key 'PRIMARY'
+
+2021-03-10 17:38:39,550   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-10 17:38:39,550   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 74, in collectCrimeEntities
+    self.br = open(config.inputFile, "r")
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+2021-03-10 17:40:29,691   Exception occurred  
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\HandleFile.py", line 112, in getURI
+    r = requests.get(url, allow_redirects=True)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No schema supplied. Perhaps you meant http://?
+
+2021-03-10 17:40:56,340   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 17:40:58,443   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 17:41:16,453   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 17:41:17,809   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:02:54,360   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:02:57,719   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:03:17,477   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:03:18,826   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:03:20,609   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'ehe' in 'field list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'ehe' in 'field list'
+
+2021-03-10 18:03:20,613   no valid date format found
+
+2021-03-10 18:04:35,793   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:04:37,105   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:04:38,886   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'ehe' in 'field list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'ehe' in 'field list'
+
+2021-03-10 18:04:38,889   no valid date format found
+
+2021-03-10 18:05:06,001   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:05:07,236   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:05:08,983   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Column count doesn't match value count at row 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.DataError: 1136 (21S01): Column count doesn't match value count at row 1
+
+2021-03-10 18:05:08,991   no valid date format found
+
+2021-03-10 18:06:29,115   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:06:30,337   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:06:54,002   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:06:55,218   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:07:23,280   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:07:24,471   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:08:22,034   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:08:23,277   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:08:24,937   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+2021-03-10 18:08:24,952   no valid date format found
+
+2021-03-10 18:10:51,267   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:10:52,518   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:10:54,300   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+2021-03-10 18:11:03,461   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-10 18:11:04,668   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-03T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-10 18:11:06,392   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+2021-03-10 18:11:06,392   no valid date format found
+
+2021-03-12 16:35:51,591   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 16:35:54,418   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 16:35:57,496   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+2021-03-12 16:35:57,496   no valid date format found
+
+2021-03-12 16:50:15,164   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 16:50:17,741   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 16:50:20,303   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+2021-03-12 16:50:20,303   no valid date format found
+
+2021-03-12 16:52:58,728   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 16:53:00,150   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 16:53:02,905   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ehe'),(20445,'"500 Block MINNESOTA AV"','"POINT (-78.808 42.946)","UNIVERSITY...' at line 1
+
+2021-03-12 16:53:02,921   no valid date format found
+
+2021-03-12 16:55:00,252   no valid date format found
+
+2021-03-12 16:59:33,927   no valid date format found
+
+2021-03-12 17:06:49,175   no valid date format found
+
+2021-03-12 17:07:18,100   no valid date format found
+
+2021-03-12 17:08:02,200   no valid date format found
+
+2021-03-12 17:09:12,594   no valid date format found
+
+2021-03-12 17:09:52,988   no valid date format found
+
+2021-03-12 17:10:23,325   no valid date format found
+
+2021-03-12 17:10:40,722   no valid date format found
+
+2021-03-12 17:12:00,536   no valid date format found
+
+2021-03-12 17:14:30,667   no valid date format found
+
+2021-03-12 17:15:38,680   no valid date format found
+
+2021-03-12 17:16:47,585   no valid date format found
+
+2021-03-12 17:18:22,527   no valid date format found
+
+2021-03-12 17:19:01,542   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 101, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+2021-03-12 17:20:06,358   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 101, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+2021-03-12 17:21:23,770   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 101, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+2021-03-12 17:21:52,750   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 101, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+2021-03-12 17:22:01,145   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 101, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+2021-03-12 17:23:10,850   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 101, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+2021-03-12 17:23:41,805   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 101, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+2021-03-12 17:28:49,722   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 101, in idWhere
+    self.mycursor.execute("SELECT id FROM " + table + " WHERE " + where)
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'heh''' at line 1
+
+2021-03-12 17:45:40,225   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:45:43,911   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:45:46,254   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Column count doesn't match value count at row 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.DataError: 1136 (21S01): Column count doesn't match value count at row 1
+
+2021-03-12 17:49:11,342   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:49:14,231   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:49:17,340   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Column count doesn't match value count at row 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.DataError: 1136 (21S01): Column count doesn't match value count at row 1
+
+2021-03-12 17:50:06,873   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:50:08,591   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:50:11,232   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Column count doesn't match value count at row 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.DataError: 1136 (21S01): Column count doesn't match value count at row 1
+
+2021-03-12 17:54:04,263   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:54:05,762   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:54:08,152   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'address_id' in 'field list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'address_id' in 'field list'
+
+2021-03-12 17:54:25,671   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:54:27,108   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:54:29,498   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Unknown column 'census_block_group' in 'field list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'census_block_group' in 'field list'
+
+2021-03-12 17:55:21,150   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:55:22,822   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:55:46,827   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:55:49,077   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:56:16,658   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:56:18,252   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:56:21,798   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:56:23,276   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:56:26,072   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Duplicate entry '20444' for key 'PRIMARY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '20444' for key 'PRIMARY'
+
+2021-03-12 17:56:38,419   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 17:56:39,996   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 17:56:42,574   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''"POINT (-78.808 42.946)","UNIVERSITY","District E","Kensington-Bailey","eheh")' at line 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''"POINT (-78.808 42.946)","UNIVERSITY","District E","Kensington-Bailey","eheh")' at line 1
+
+2021-03-12 20:56:57,951   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 20:57:00,294   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 20:58:38,817   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 20:58:41,103   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 20:58:42,931   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Duplicate entry '20445' for key 'PRIMARY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '20445' for key 'PRIMARY'
+
+2021-03-12 20:58:59,277   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 20:59:00,527   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 21:00:03,310   Starting new HTTPS connection (1): data.buffalony.gov:443
+
+2021-03-12 21:00:04,747   https://data.buffalony.gov:443 "GET /resource/d6g9-xbgu.csv?$where=created_at%20%3E%20%272021-03-05T00:00:00%27 HTTP/1.1" 200 None
+
+2021-03-12 21:00:06,590   Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 507, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Duplicate entry '20447' for key 'PRIMARY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\documents\ds_squad\ds-squad-project\datakit\src\zstage\work\db.py", line 60, in insert
+    self.mycursor.execute(args[0])
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 274, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\ASUS\anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 511, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '20447' for key 'PRIMARY'

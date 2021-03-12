@@ -3,13 +3,15 @@ import traceback
 import os
 import datetime
 from os.path import dirname
+import requests
 
 import src.zstage.main.config as config
 import src.zstage.main.compile as compile
 import src.zstage.work.db as db
 
 
-# Note that the log file created from errors in the file python file will be stored as 'file_log'. Can be changed as needed
+# Note that the log file created from errors in the file python file will be stored as 'file_log'.
+# Can be changed as needed
 # Create and configure logger :
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)
@@ -22,7 +24,9 @@ logger = logging.getLogger()
  Note that fileName will need to have the full address as input which can be changed if 
 I know where the file normally originates from:
 """
-class File:
+addresstable ={}
+
+class HandleFile:
 
     def getSQL(self, fileName):
         self.sql = ""
@@ -70,9 +74,8 @@ class File:
             self.br = open(config.inputFile, "r")
             for line in self.br.read().splitlines()[1:]:
                 self.row = line.split(',')
-                if len(self.row) > 6 and not db.exists("addresses",
-                                                       "address1='" + self.row[6] + "' AND address2='" + self.row[
-                                                           7] + "';"):
+                if len(self.row) > 6 and not db.DB().exists("address",
+                                                            "address1='" + self.row[6] + "';"):
                     self.value = []
                     self.value.append(self.row[6])
                     self.value.append(self.row[7])
@@ -82,11 +85,11 @@ class File:
                     self.value.append(self.row[23])
                     self.value.append(self.row[22])
                     self.value.append(self.row[11])
-                    compile.addressTable.put(compile.addressTable.size() + db.tableSize("address") + 1, self.value)
-
-                if len(self.row) > 6 and not db.exists("incidents",
-                                                       "case_number='" + self.row[1] + "' AND address2='" + self.row[
-                                                           0] + "';"):
+                    compile.addressTable[len(compile.addressTable) + db.DB().tableSize("address") + 1]= self.value
+                    addresstable = compile.addressTable
+                    print(addresstable)
+                if len(self.row) > 6 and not db.DB().exists("incident",
+                                                       "case_number='" + self.row[1] + "';"):
                     self.value = []
                     self.value.append(self.row[6])
                     self.value.append(self.row[1])
@@ -94,10 +97,28 @@ class File:
                     self.value.append(self.row[3])
                     self.value.append(self.row[6])
                     self.value.append(self.row[7])
-                    compile.incidentTable.put(compile.incidentTable.size() + db.tableSize("incident") + 1, self.value)
+                    compile.incidentTable[len(compile.incidentTable) + db.DB().tableSize("incident") + 1] = self.value
+                    incidenttable = compile.incidentTable
+                    print(incidenttable)
             return True
         except Exception as ex:
             traceback.print_exc()
             logger.exception("Exception occurred")
             return False
 
+    @staticmethod
+    def getURI():
+        try:
+            url = config.inputURL
+            r = requests.get(url, allow_redirects=True)
+            open(config.inputFile, 'wb').write(r.content)
+            return True
+        except Exception as ex:
+            traceback.print_exc()
+            logger.exception("Exception occurred" + "  " + config.inputURL)
+
+def main():
+    config.setConfig("Crime")
+    HandleFile().collectCrimeEntities()
+if __name__ == "__main__":
+    main()
