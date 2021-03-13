@@ -21,7 +21,7 @@ def main():
         Compile().compile_dates()
         Compile().compile_weather()
     db.close()
-    HandleFile.logger("Completed compile " + config.jobDesc+" " + status)
+    HandleFile.HandleFile().logMessage("Completed compile " + config.jobDesc+" " + status)
 
 
 entityMap = {}

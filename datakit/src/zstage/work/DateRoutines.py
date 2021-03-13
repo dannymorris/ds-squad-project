@@ -1,14 +1,6 @@
 from datetime import datetime, timedelta
-import logging
-import os
-from os.path import dirname
-
-for handler in logging.root.handlers[:]:
-    logging.root.removeHandler(handler)
-logging.basicConfig(filename=f"{dirname(dirname(dirname(os.getcwd())))}/logs/date_log.log",
-                    format='\n%(asctime)s   %(message)s',
-                    filemode='a', level=logging.DEBUG)
-logger = logging.getLogger()
+import src.zstage.work.HandleFile as HandleFile
+import src.zstage.main.config as config
 
 
 class DateRoutines:
@@ -25,7 +17,7 @@ class DateRoutines:
 
             except:
                 pass
-        logger.warning('no valid date format found')
+        HandleFile.HandleFile().logMessage("FAILED CONVERTING " + string_val + "TO   sql DATE format")
         raise ValueError('no valid date format found')
 
     def minusDays(self,Days):
@@ -33,7 +25,8 @@ class DateRoutines:
         return self.d
 
 def main():
-    dateTime = "2021-03-03T00:26:00.000"
+    config.setConfig("Crime")
+    dateTime = "2021-03-03T0g0:26:00.000"
     sql = DateRoutines().stringtoDate(dateTime)
     print(sql)
 if __name__ == "__main__":

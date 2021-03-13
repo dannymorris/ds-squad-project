@@ -1,17 +1,9 @@
 import mysql.connector
-import logging
 import traceback
-import os
-# import datetime
-from os.path import dirname
 
+import src.zstage.work.HandleFile as HandleFile
+import src.zstage.main.config as config
 
-for handler in logging.root.handlers[:]:
-    logging.root.removeHandler(handler)
-logging.basicConfig(filename=f"{dirname(dirname(dirname(os.getcwd())))}/logs/date_log.log",
-                    format='\n%(asctime)s   %(message)s',
-                    filemode='a', level=logging.DEBUG)
-logger = logging.getLogger()
 
 
 class DB:
@@ -26,21 +18,22 @@ class DB:
     def connect(self):
         try:
             self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
-                                               self.database)
+                                               self.databasee)
 
             self.mycursor = self.con.cursor()
             return self.mycursor
-        except Exception:
-            logger.exception("Exception occurred")
+        except Exception as e:
+            traceback.print_exc()
+            HandleFile.HandleFile().logMessage(e)
             return None
 
     def close(self):
         try:
             self.con.close()
             return True
-        except Exception:
+        except Exception as e:
             traceback.print_exc()
-            logger.exception("Exception occurred")
+            HandleFile.HandleFile().logMessage(e)
             return False
 
     def insert(self, *args):
@@ -51,17 +44,17 @@ class DB:
                 self.mycursor.execute("INSERT INTO " + args[0] + " VALUES " + args[1])
                 #self.mycursor.commit()
                 return True
-            except Exception:
+            except Exception as e:
                 traceback.print_exc()
-                logger.exception("Exception occurred")
+                HandleFile.HandleFile().logMessage(e)
                 return False
         elif len(args) == 1:
             try:
                 self.mycursor.execute(args[0])
                 return True
-            except Exception:
+            except Exception as e:
                 traceback.print_exc()
-                logger.exception("Exception occurred")
+                HandleFile.HandleFile().logMessage(e)
                 return False
 
     def tableSize(self, table):
@@ -72,9 +65,9 @@ class DB:
             size = self.mycursor.fetchall()
             return size[0][0]
 
-        except Exception:
+        except Exception as e:
             traceback.print_exc()
-            logger.exception("Exception occurred")
+            HandleFile.HandleFile().logMessage(e)
             return size
 
     def exists(self, table, where):
@@ -89,9 +82,9 @@ class DB:
             if size[0][0] > 0:
                 exists = True
             return exists
-        except Exception:
+        except Exception as e:
             traceback.print_exc()
-            logger.exception("Exception occurred")
+            HandleFile.HandleFile().logMessage(e)
             return exists
 
     def idWhere(self, table, where):
@@ -119,9 +112,9 @@ class DB:
             else:
                 return id
 
-        except Exception:
+        except Exception as e:
             traceback.print_exc()
-            logger.exception("Exception occurred")
+            HandleFile.HandleFile().logMessage(e)
             return None
 
     def selectStatement(self, select):
@@ -146,9 +139,9 @@ class DB:
                         c = c + 1
                 results[len(results) + 1] = line
             return results
-        except Exception:
+        except Exception as e:
             traceback.print_exc()
-            logger.exception("Exception occurred")
+            HandleFile.HandleFile().logMessage(e)
             return results
 
 
@@ -157,6 +150,7 @@ def main():
     #print(sql)
     #connection = DB()
     #connection.connect()
+    config.setConfig("Crime")
     size = DB().idWhere("date_type","date_type='hello'")
     #connection.close()
     #print(size)

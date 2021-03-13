@@ -1,8 +1,6 @@
-import logging
 import traceback
 import os
 import datetime
-from os.path import dirname
 import requests
 
 import src.zstage.main.config as config
@@ -12,13 +10,7 @@ import src.zstage.work.db as db
 
 # Note that the log file created from errors in the file python file will be stored as 'file_log'.
 # Can be changed as needed
-# Create and configure logger :
-for handler in logging.root.handlers[:]:
-    logging.root.removeHandler(handler)
-logging.basicConfig(filename=f"{dirname(dirname(dirname(os.getcwd())))}/logs/file_log.log",
-                    format='\n%(asctime)s   %(message)s',
-                    filemode='a', level=logging.DEBUG)
-logger = logging.getLogger()
+
 
 """
  Note that fileName will need to have the full address as input which can be changed if 
@@ -36,9 +28,9 @@ class HandleFile:
                 self.sql = self.sql + " " + line
             self.br.close()
             return self.sql
-        except Exception as ex:
+        except Exception as e:
             traceback.print_exc()
-            logger.exception("Exception occurred")
+            HandleFile().logMessage(e)
             self.br.close()
             return self.sql
 
@@ -51,9 +43,9 @@ class HandleFile:
             else:
                 self.bw.write(f'\n{line}')
                 self.bw.close()
-        except Exception as ex:
+        except Exception as e:
             traceback.print_exc()
-            logger.exception("Exception occurred")
+            HandleFile().logMessage(e)
 
     def logMessage(self, line):
         print(line)
@@ -67,7 +59,6 @@ class HandleFile:
                 self.bw.close()
         except Exception as ex:
             traceback.print_exc()
-            logger.exception("Exception occurred")
 
     def collectCrimeEntities(self):
         try:
@@ -101,9 +92,9 @@ class HandleFile:
                     incidenttable = compile.incidentTable
                     print(incidenttable)
             return True
-        except Exception as ex:
+        except Exception as e:
             traceback.print_exc()
-            logger.exception("Exception occurred")
+            HandleFile().logMessage(e)
             return False
 
     @staticmethod
@@ -115,7 +106,7 @@ class HandleFile:
             return True
         except Exception as ex:
             traceback.print_exc()
-            logger.exception("Exception occurred" + "  " + config.inputURL)
+            HandleFile().logMessage("Exception occurred" + "  " + config.inputURL)
 
 def main():
     config.setConfig("Crime")
