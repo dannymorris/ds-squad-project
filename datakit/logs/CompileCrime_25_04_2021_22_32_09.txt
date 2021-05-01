@@ -1,0 +1,11 @@
+2021-04-25 22:33:00.393957 :: Adding 7 New rows to addresses
+2021-04-25 22:33:02.147657 :: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '),(2,"NORTH ST & COLLEGE ST","POINT (-78.879 42.902)","FILLMORE","District B"...' at line 1
+2021-04-25 22:33:02.148730 :: Adding 7 New rows to incidents
+2021-04-25 22:33:05.935885 :: list index out of range
+2021-04-25 22:33:09.648591 :: list index out of range
+2021-04-25 22:33:13.450030 :: list index out of range
+2021-04-25 22:33:17.289444 :: list index out of range
+2021-04-25 22:33:21.071097 :: list index out of range
+2021-04-25 22:33:24.831697 :: list index out of range
+2021-04-25 22:33:28.622640 :: list index out of range
+2021-04-25 22:33:30.370853 :: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '),('0','2021-04-23 20:00:00','"21-1140020"',None,20,),('0','2021-04-24 00:30:...' at line 1

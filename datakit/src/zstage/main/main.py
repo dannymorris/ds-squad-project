@@ -1,16 +1,19 @@
-# This is a sample Python script.
+import src.zstage.work.db as db
+import mysql.connector
+import src.zstage.main.config as config
+import pandas as pd
+from datetime import datetime
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+begin_time = datetime.now()
+print(begin_time)
+config.setConfig("Crime")
+cnx = mysql.connector.connect(user='caskey5_dannyMorris', password='dsSquad12', host='192.249.124.190',  database='caskey5_buffaloCrime')
+mycursor = cnx.cursor()
 
+file = db.DB().selectStatement("select * from full_incidents")
+cnx.close()
+type(file)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(datetime.now()-begin_time)
+#table = pd.DataFrame.from_dict(file)
+#print(file)

@@ -18,7 +18,7 @@ class DB:
     def connect(self):
         try:
             self.con = mysql.connector.connect(user=self.user, password=self.password, host=self.host, database=
-                                               self.databasee)
+                                               self.database)
 
             self.mycursor = self.con.cursor()
             return self.mycursor
@@ -140,7 +140,7 @@ class DB:
                 results[len(results) + 1] = line
             return results
         except Exception as e:
-            traceback.print_exc()
+            #traceback.print_exc()
             HandleFile.HandleFile().logMessage(e)
             return results
 
@@ -151,7 +151,9 @@ def main():
     #connection = DB()
     #connection.connect()
     config.setConfig("Crime")
-    size = DB().idWhere("date_type","date_type='hello'")
+    address = "'0 Block MARTHA AV'"
+    results = DB().selectStatement(f"select location from address where address1 = {address} limit 1")
+    print(results[1])
     #connection.close()
     #print(size)
     #for i in maps.keys():

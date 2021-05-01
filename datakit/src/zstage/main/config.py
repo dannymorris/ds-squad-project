@@ -20,7 +20,7 @@ def setConfig(job):
     global inputURL
     jobDesc = job
     if "Crime" in job:
-        pastDate = date.DateRoutines().minusDays(7)
+        pastDate = date.DateRoutines().minusDays(1)
         inputFile = f"{dirname(dirname(dirname(os.getcwd())))}\\Crime_Incidents.csv"
         logFile = f"{dirname(dirname(dirname(os.getcwd())))}\\logs\\CompileCrime_" \
                   f"{datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.txt"
@@ -30,7 +30,7 @@ def setConfig(job):
 
     elif "Date" in job:
         inputFile = f"{dirname(dirname(dirname(os.getcwd())))}\\Date.csv"
-        logFile = f"{dirname(dirname(dirname(os.getcwd())))}\\logs\\CompileDate_{datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.txt"
+        logFile = f"{dirname(dirname(dirname(os.getcwd())))}\\logs\\CompileDate_{datetime.now().strftime('%Y_%m_%d')}.txt"
     return True
 
 

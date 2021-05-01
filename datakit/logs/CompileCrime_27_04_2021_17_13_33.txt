@@ -1,0 +1,1 @@
+2021-04-27 17:13:35.707798 :: 1054 (42S22): Unknown column 'hello' in 'where clause'

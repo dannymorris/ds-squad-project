@@ -1,0 +1,1 @@
+2021-04-26 23:38:13.535781 :: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '='1' limit 1' at line 1

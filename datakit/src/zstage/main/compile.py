@@ -1,32 +1,13 @@
-
-
-
 import src.zstage.main.config as config
 import src.zstage.work.db as db
 import src.zstage.work.HandleFile as HandleFile
 import src.zstage.work.DateRoutines as date
-
-
-def main():
-    db.DB().connect()
-    status = config.setConfig("Crime")
-    if "Crime" in config.jobDesc:
-        Compile().compile_crime()
-    if "Dates" in config.jobDesc:
-        Compile().compile_dates()
-    if "Weather" in config.jobDesc:
-        Compile().compile_weather()
-    if "All" in config.jobDesc:
-        Compile().compile_crime()
-        Compile().compile_dates()
-        Compile().compile_weather()
-    db.close()
-    HandleFile.HandleFile().logMessage("Completed compile " + config.jobDesc+" " + status)
+import src.zstage.work.fill_data as filldata
 
 
 entityMap = {}
-incidentTable = {268338: ['"0 Block MILLICENT AV"', '"21-0620021"', '"2021-03-03T00:26:00.000"', '"LARCENY/THEFT"', '"0 Block MILLICENT AV"', '"heh"'], 268339: ['"500 Block MINNESOTA AV"', '"21-0620037"', '"2021-03-03T00:05:51.000"', '"UUV"', '"500 Block MINNESOTA AV"', '"ehe"']}
-addressTable ={20449: ['"0 Block MILLICENT AV"',  '"POINT (-78.81 42.935)"', '"UNIVERSITY"', '"District E"', '"Kensington-Bailey"', '"2"', '"ehe"'], 20450: ['"500 Block MINNESOTA AV"',  '"POINT (-78.808 42.946)"', '"UNIVERSITY"', '"District E"', '"Kensington-Bailey"', '"3"', '"eheh"']}
+incidentTable = {}
+addressTable ={}
 dateTable = {}
 weatherTable = {}
 
@@ -34,46 +15,62 @@ class Compile :
 
     def compile_crime(self):
         HandleFile.HandleFile().getURI()
-        #self.status = HandleFile.HandleFile().collectCrimeEntities()
+        filldata.filldata()
+        self.tuple = HandleFile.HandleFile().collectCrimeEntities()
+        self.addresstable=self.tuple[0]
+        self.incidenttable = self.tuple[1]
         self.sql = self.generateAddressInsertStatement()
+        print(self.sql)
         if len(self.sql.split("VALUES")[1])>5:
             status = db.DB().insert(self.sql)
         self.sql = self.generateIncidentInsertStatement()
+        print(self.sql)
         if len(self.sql.split("VALUES")[1])>5:
             self.status =db.DB().insert(self.sql)
-        return self.status
+        return True
 
     def generateAddressInsertStatement(self):
         self.line = "INSERT into address (id,address1,location,council_district,police_district,neighborhood,zipcode) VALUES "
-        HandleFile.HandleFile().logMessage("Adding " + str(len(incidentTable)) + " New rows to addresses")
+        HandleFile.HandleFile().logMessage("Adding " + str(len(self.addresstable)) + " New rows to addresses")
         self.j=0
-        for i in addressTable.keys():
-            address1 = addressTable.get(i)[0]
-            location = addressTable.get(i)[1]
-            council_district = addressTable.get(i)[2]
-            police_district = addressTable.get(i)[3]
-            neighborhood = addressTable.get(i)[4]
-            zipcode = addressTable.get(i)[6]
-            if self.j==0:
-                self.line = self.line + "(" + str(i) + ",'" + address1 + "','" + location + "," + council_district + "," + police_district + "," + neighborhood + "," + str(zipcode) + ")"
-            else :
-                self.line = self.line + ",(" + str(i) + ",'" + address1 + "','" + location + "," + council_district + "," + police_district + "," + neighborhood  + "," + zipcode + ")"
+        for i in self.addresstable.keys():
+            rs =db.DB().selectStatement(f"select location from address where address1 = '{self.addresstable.get(i)[0]}' limit 1")
+            if len(rs)==0:
+                address1 = self.addresstable.get(i)[0]
+                location = self.addresstable.get(i)[1]
+                council_district = self.addresstable.get(i)[2]
+                police_district = self.addresstable.get(i)[3]
+                neighborhood = self.addresstable.get(i)[4]
+                zipcode = self.addresstable.get(i)[5]
+                if self.j == 0:
+                    self.line = self.line + "(" + str(
+                        i) + ",'" + address1 + "','" + location + "','" + council_district + "','" + police_district + "','" + neighborhood + "','" + zipcode + "')"
+                else:
+                    self.line = self.line + ",(" + str(
+                        i) + ",'" + address1 + "','" + location + "','" + council_district + "','" + police_district + "','" + neighborhood + "','" + zipcode + "')"
+
+
+            else:
+                location = self.addresstable.get(i)[1]
+                new_loc =  str(rs[1]) + f",{location[8:-2]}"
+                print(new_loc)
+                db.DB().insert(f"update address set location = '{new_loc}' where address1 = '{self.addresstable.get(i)[0]}'")
             self.j = self.j+1
         if self.line.endswith(','):
             self.line=self.line[:-1]
-        print(self.line)
         return self.line
 
     def generateIncidentInsertStatement(self):
         self.line = "INSERT INTO incident (incident_id,incident_date,case_number,address_id,incident_type_id,location) VALUES "
-        HandleFile.HandleFile().logMessage("Adding " + str(len(incidentTable)) + " New rows to incidents")
+        HandleFile.HandleFile().logMessage("Adding " + str(len(self.incidenttable)) + " New rows to incidents")
         self.j=0
-        for i in incidentTable.keys():
-            value = incidentTable.get(i)
-            incident_id = str(i)
+        for i in self.incidenttable.keys():
+            value = self.incidenttable.get(i)
+            print(value)
+            incident_id = value[0][1:-1]
             if len(incident_id) < 2:
-                incident_id="0"
-            case_number = value[1]
+                incident_id='0'
+            case_number = value[1][1:-1]
             dateTime = value[2]
             mySQLDateTime = date.DateRoutines().stringtoDate(dateTime)
             incident_type = value[3]
@@ -81,19 +78,18 @@ class Compile :
             address1 = ""
             location = ""
             if len(value) > 4:
-                address1=value[4]
-            if len(value) > 5:
-                location=value[5]
-            address_id = db.DB().idWhere("address","address1='" + address1[1:-1] + "'")
+                address1=value[4][1:-1]
+            if len(value) > 6:
+                location=value[6][8:-2]
+
+            address_id = db.DB().idWhere("address","address1='" + address1 + "'")
             if self.j==0:
-                self.line = self.line + "('" + str(incident_id) + "','" + mySQLDateTime + "','" + str(case_number) + "'," + str(address_id) + "," + str(incident_type_id) +","+location + ")"
+                self.line = self.line + "('" + str(incident_id) + "','" + mySQLDateTime + "','" + str(case_number) + "'," + str(address_id) + "," + str(incident_type_id) +",'"+location + "')"
             else :
-                self.line = self.line + ",('" + str(incident_id) + "','" + mySQLDateTime + "','" + str(case_number) + "'," + str(address_id) + "," + str(incident_type_id) +","+location + ")"
+                self.line = self.line + ",('" + str(incident_id) + "','" + mySQLDateTime + "','" + str(case_number) + "'," + str(address_id) + "," + str(incident_type_id) +",'"+location + "')"
             self.j=self.j+1
-            print(self.line)
             if self.line.endswith(','):
                 self.line = self.line[:-1]
-                print(self.line)
                 return self.line
         else :
             return self.line
@@ -107,9 +103,18 @@ class Compile :
         return True
 
 def main():
-    config.setConfig("Crime")
-    #Compile().generateIncidentInsertStatement()
-    #Compile().generateAddressInsertStatement()
-    Compile().compile_crime()
+    status = config.setConfig("Crime")
+    if "Crime" in config.jobDesc:
+        Compile().compile_crime()
+    if "Dates" in config.jobDesc:
+        Compile().compile_dates()
+    if "Weather" in config.jobDesc:
+        Compile().compile_weather()
+    if "All" in config.jobDesc:
+        Compile().compile_crime()
+        Compile().compile_dates()
+    HandleFile.HandleFile().logMessage("Completed compile " + config.jobDesc+" " + status)
+
+
 if __name__ == "__main__":
     main()

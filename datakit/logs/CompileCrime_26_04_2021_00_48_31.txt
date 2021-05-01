@@ -1,0 +1,3 @@
+2021-04-26 00:49:11.464518 :: Adding 0 New rows to addresses
+2021-04-26 00:49:11.466523 :: Adding 7 New rows to incidents
+2021-04-26 00:49:39.416161 :: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '42.935)),(2,'2021-04-23 20:00:00','21-1140020',None,20,POINT (-78.879 42.902)...' at line 1

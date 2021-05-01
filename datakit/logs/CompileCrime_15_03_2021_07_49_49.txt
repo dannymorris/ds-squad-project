@@ -1,0 +1,14 @@
+2021-03-15 07:49:51.945851 :: Adding 2 New rows to addresses
+2021-03-15 07:49:51.946856 :: 'DB' object has no attribute 'databasee'
+2021-03-15 07:49:51.946856 :: 'NoneType' object has no attribute 'execute'
+2021-03-15 07:49:51.947846 :: Adding 2 New rows to incidents
+2021-03-15 07:49:51.949845 :: 'DB' object has no attribute 'databasee'
+2021-03-15 07:49:51.949845 :: 'NoneType' object has no attribute 'execute'
+2021-03-15 07:49:51.950838 :: 'DB' object has no attribute 'databasee'
+2021-03-15 07:49:51.950838 :: 'NoneType' object has no attribute 'execute'
+2021-03-15 07:49:51.951835 :: 'DB' object has no attribute 'databasee'
+2021-03-15 07:49:51.951835 :: 'NoneType' object has no attribute 'execute'
+2021-03-15 07:49:51.952840 :: 'DB' object has no attribute 'databasee'
+2021-03-15 07:49:51.952840 :: 'NoneType' object has no attribute 'execute'
+2021-03-15 07:49:51.953828 :: 'DB' object has no attribute 'databasee'
+2021-03-15 07:49:51.953828 :: 'NoneType' object has no attribute 'execute'

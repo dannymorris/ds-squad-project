@@ -1,0 +1,10 @@
+2021-04-30 12:02:57.474881 :: Adding 7 New rows to addresses
+2021-04-30 12:02:59.262156 :: list index out of range
+2021-04-30 12:03:01.047405 :: list index out of range
+2021-04-30 12:03:02.902784 :: list index out of range
+2021-04-30 12:03:04.639850 :: list index out of range
+2021-04-30 12:03:06.393616 :: list index out of range
+2021-04-30 12:03:08.144609 :: list index out of range
+2021-04-30 12:03:09.878644 :: list index out of range
+2021-04-30 12:03:11.724462 :: Adding 7 New rows to incidents
+2021-04-30 12:03:11.734419 :: FAILED CONVERTING 2021-04-26T20:08:00.000TO   sql DATE format

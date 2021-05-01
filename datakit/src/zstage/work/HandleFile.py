@@ -16,7 +16,7 @@ import src.zstage.work.db as db
  Note that fileName will need to have the full address as input which can be changed if 
 I know where the file normally originates from:
 """
-addresstable ={}
+
 
 class HandleFile:
 
@@ -61,41 +61,44 @@ class HandleFile:
             traceback.print_exc()
 
     def collectCrimeEntities(self):
+        self.addresstable = compile.addressTable
+        self.incidenttable = compile.incidentTable
         try:
             self.br = open(config.inputFile, "r")
             for line in self.br.read().splitlines()[1:]:
                 self.row = line.split(',')
-                if len(self.row) > 6 and not db.DB().exists("address",
-                                                            "address1='" + self.row[6] + "';"):
-                    self.value = []
-                    self.value.append(self.row[6])
-                    self.value.append(self.row[7])
-                    self.value.append(self.row[16])
-                    self.value.append(self.row[25])
-                    self.value.append(self.row[24])
-                    self.value.append(self.row[23])
-                    self.value.append(self.row[22])
-                    self.value.append(self.row[11])
-                    compile.addressTable[len(compile.addressTable) + db.DB().tableSize("address") + 1]= self.value
-                    addresstable = compile.addressTable
-                    print(addresstable)
                 if len(self.row) > 6 and not db.DB().exists("incident",
-                                                       "case_number='" + self.row[1] + "';"):
+                                                       "case_number='" + self.row[1][1:-1]  + "';"):
                     self.value = []
-                    self.value.append(self.row[6])
+                    self.value.append(self.row[6][1:-1])
+                    #self.value.append(self.row[7])
+                    self.value.append(self.row[16][1:-1])
+                    #self.value.append(self.row[25])
+                    self.value.append(self.row[25][1:-1])
+                    self.value.append(self.row[24][1:-1])
+                    self.value.append(self.row[23][1:-1])
+                    self.value.append(self.row[10][1:-1])
+                    compile.addressTable[len(compile.addressTable) + db.DB().tableSize("address") + 1]= self.value
+                    self.addresstable = compile.addressTable
+                    print(self.addresstable)
+                if len(self.row) > 6 and not db.DB().exists("incident",
+                                                       "case_number='" + self.row[1][1:-1]  + "';"):
+                    self.value = []
+                    self.value.append(self.row[0])
                     self.value.append(self.row[1])
                     self.value.append(self.row[2])
                     self.value.append(self.row[3])
                     self.value.append(self.row[6])
                     self.value.append(self.row[7])
+                    self.value.append(self.row[16])
                     compile.incidentTable[len(compile.incidentTable) + db.DB().tableSize("incident") + 1] = self.value
-                    incidenttable = compile.incidentTable
-                    print(incidenttable)
-            return True
+                    self.incidenttable = compile.incidentTable
+                    print(self.incidenttable)
+            return (self.addresstable, self.incidenttable)
         except Exception as e:
             traceback.print_exc()
             HandleFile().logMessage(e)
-            return False
+            return (self.addresstable, self.incidenttable)
 
     @staticmethod
     def getURI():
@@ -113,3 +116,5 @@ def main():
     HandleFile().collectCrimeEntities()
 if __name__ == "__main__":
     main()
+
+

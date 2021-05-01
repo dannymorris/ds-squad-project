@@ -1,0 +1,1 @@
+2021-04-27 17:14:42.726644 :: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Block MARTH AV limit 1' at line 1

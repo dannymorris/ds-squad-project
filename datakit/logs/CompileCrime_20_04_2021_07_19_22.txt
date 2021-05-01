@@ -1,0 +1,3 @@
+2021-04-20 07:19:24.063307 :: Adding 2 New rows to addresses
+2021-04-20 07:19:26.384223 :: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''"POINT (-78.808 42.946)","UNIVERSITY","District E","Kensington-Bailey","eheh")' at line 1
+2021-04-20 07:19:26.385220 :: Adding 2 New rows to incidents
